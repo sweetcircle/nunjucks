@@ -1,0 +1,516 @@
+Statistical profiling result from v8.log, (10045 ticks, 51 unaccounted, 0 excluded).
+
+ [Unknown]:
+   ticks  total  nonlib   name
+     51    0.5%
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   3434   34.2%    0.0%  /usr/local/bin/node
+   2525   25.1%    0.0%  /usr/lib/system/libsystem_c.dylib
+   2454   24.4%    0.0%  /usr/lib/system/libsystem_kernel.dylib
+     14    0.1%    0.0%  /usr/lib/libstdc++.6.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    102    1.0%    6.3%  Stub: InstanceofStub
+     81    0.8%    5.0%  Stub: StringAddStub
+     79    0.8%    4.9%  LazyCompile: *Tokenizer.nextToken /Users/james/projects/nunjucks/src/lexer.js:56
+     75    0.7%    4.6%  LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+     74    0.7%    4.6%  Function: Object.extend.init /Users/james/projects/nunjucks/src/nodes.js:7
+     71    0.7%    4.4%  LazyCompile: *Tokenizer._extractMatching /Users/james/projects/nunjucks/src/lexer.js:283
+     65    0.6%    4.0%  LazyCompile: *Object.extend.compileOutput /Users/james/projects/nunjucks/src/compiler.js:814
+     47    0.5%    2.9%  LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+     42    0.4%    2.6%  LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     40    0.4%    2.5%  LazyCompile: SimpleSlice native array.js:324
+     40    0.4%    2.5%  LazyCompile: *new_cls /Users/james/projects/nunjucks/src/object.js:37
+     39    0.4%    2.4%  LazyCompile: *indexOf native string.js:118
+     34    0.3%    2.1%  Stub: CEntryStub
+     29    0.3%    1.8%  Stub: ArgumentsAccessStub_NewNonStrictFast
+     29    0.3%    1.8%  LazyCompile: *slice native string.js:510
+     26    0.3%    1.6%  LazyCompile: *Object.extend.compileLiteral /Users/james/projects/nunjucks/src/compiler.js:240
+     25    0.2%    1.5%  Builtin: FunctionCall
+     23    0.2%    1.4%  Stub: SubStringStub
+     23    0.2%    1.4%  Function: Object.extend.assertType /Users/james/projects/nunjucks/src/compiler.js:161
+     22    0.2%    1.4%  Builtin: ArgumentsAdaptorTrampoline
+     21    0.2%    1.3%  LazyCompile: *replace native string.js:221
+     18    0.2%    1.1%  LazyCompile: *ArraySlice native array.js:621
+     17    0.2%    1.1%  Stub: KeyedLoadElementStub
+     17    0.2%    1.1%  LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     17    0.2%    1.1%  LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     17    0.2%    1.1%  LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+     16    0.2%    1.0%  LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+     16    0.2%    1.0%  LazyCompile: *Object.extend.parsePostfix /Users/james/projects/nunjucks/src/parser.js:500
+     16    0.2%    1.0%  CallMegamorphic: args_count: 1
+     15    0.1%    0.9%  Builtin: JSConstructStubGeneric
+     14    0.1%    0.9%  LazyCompile: *indexOf native array.js:1236
+     14    0.1%    0.9%  LazyCompile: *Tokenizer._extractString /Users/james/projects/nunjucks/src/lexer.js:263
+     14    0.1%    0.9%  LazyCompile: *Object.extend.parseAnd /Users/james/projects/nunjucks/src/parser.js:590
+     12    0.1%    0.7%  LazyCompile: *token /Users/james/projects/nunjucks/src/lexer.js:37
+     11    0.1%    0.7%  LazyCompile: Join native array.js:119
+     11    0.1%    0.7%  LazyCompile: *Object.extend.parseUnary /Users/james/projects/nunjucks/src/parser.js:745
+     11    0.1%    0.7%  LazyCompile: *Object.extend.parseIf /Users/james/projects/nunjucks/src/parser.js:341
+     11    0.1%    0.7%  LazyCompile: *Object.extend.emit /Users/james/projects/nunjucks/src/compiler.js:62
+     11    0.1%    0.7%  LazyCompile: *Object.extend.advanceAfterBlockEnd /Users/james/projects/nunjucks/src/parser.js:101
+     11    0.1%    0.7%  LazyCompile: *<anonymous> /Users/james/projects/nunjucks/src/object.js:17
+     10    0.1%    0.6%  Stub: RegExpExecStub
+     10    0.1%    0.6%  Stub: CompareICStub {1}
+     10    0.1%    0.6%  Stub: CompareICStub
+      9    0.1%    0.6%  RegExp: ^(true|false)$
+      9    0.1%    0.6%  LazyCompile: *exports.toArray /Users/james/projects/nunjucks/src/lib.js:117
+      9    0.1%    0.6%  LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+      9    0.1%    0.6%  LazyCompile: *Object.extend.nextToken /Users/james/projects/nunjucks/src/parser.js:16
+      8    0.1%    0.5%  Stub: KeyedStoreElementStub {1}
+      8    0.1%    0.5%  LazyCompile: ToNumber native runtime.js:527
+      8    0.1%    0.5%  LazyCompile: *Tokenizer._matches /Users/james/projects/nunjucks/src/lexer.js:254
+      8    0.1%    0.5%  LazyCompile: *Object.extend.skipValue /Users/james/projects/nunjucks/src/parser.js:84
+      8    0.1%    0.5%  LazyCompile: *Object.extend.parseDiv /Users/james/projects/nunjucks/src/parser.js:697
+      8    0.1%    0.5%  LazyCompile: *Object.extend.compileLookupVal /Users/james/projects/nunjucks/src/compiler.js:360
+      8    0.1%    0.5%  Function: Object.extend.parseUntilBlocks /Users/james/projects/nunjucks/src/parser.js:976
+      7    0.1%    0.4%  Stub: CompareICStub {3}
+      7    0.1%    0.4%  RegExp: ^[-+]?[0-9]+$
+      7    0.1%    0.4%  LazyCompile: *Object.extend.parseCompare /Users/james/projects/nunjucks/src/parser.js:612
+      7    0.1%    0.4%  LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+      7    0.1%    0.4%  LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+      7    0.1%    0.4%  LazyCompile: *Object.extend._bufferAppend /Users/james/projects/nunjucks/src/compiler.js:102
+      7    0.1%    0.4%  LazyCompile: *Node.extend.init /Users/james/projects/nunjucks/src/nodes.js:78
+      6    0.1%    0.4%  Stub: CompareICStub {4}
+      6    0.1%    0.4%  LazyCompile: *SubString native string.js:205
+      6    0.1%    0.4%  LazyCompile: *RegExpExecNoTests native regexp.js:160
+      6    0.1%    0.4%  LazyCompile: *Object.extend.lookup /Users/james/projects/nunjucks/src/runtime.js:40
+      5    0.0%    0.3%  Stub: FastNewContextStub {2}
+      5    0.0%    0.3%  Stub: FastNewClosureStub
+      5    0.0%    0.3%  Stub: CallConstructStub
+      5    0.0%    0.3%  LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+      5    0.0%    0.3%  LazyCompile: *UseSparseVariant native array.js:111
+      5    0.0%    0.3%  LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/environment.js:253
+      5    0.0%    0.3%  LazyCompile: *Object.extend.emitLine /Users/james/projects/nunjucks/src/compiler.js:66
+      5    0.0%    0.3%  LazyCompile: *Object.extend.advanceAfterVariableEnd /Users/james/projects/nunjucks/src/parser.js:129
+      5    0.0%    0.3%  Function: ~new_cls /Users/james/projects/nunjucks/src/object.js:37
+      4    0.0%    0.2%  Stub: FastNewContextStub {1}
+      4    0.0%    0.2%  Stub: CompareStub_EQ_STRICT
+      4    0.0%    0.2%  LazyCompile: INSTANCE_OF native runtime.js:367
+      4    0.0%    0.2%  LazyCompile: *Tokenizer.forward /Users/james/projects/nunjucks/src/lexer.js:328
+      4    0.0%    0.2%  LazyCompile: *Tokenizer._extractUntil /Users/james/projects/nunjucks/src/lexer.js:271
+      4    0.0%    0.2%  LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+      4    0.0%    0.2%  LazyCompile: *Object.extend.compileSymbol /Users/james/projects/nunjucks/src/compiler.js:254
+      4    0.0%    0.2%  Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+      4    0.0%    0.2%  Builtin: JSEntryTrampoline
+      3    0.0%    0.2%  LazyCompile: ToObject native runtime.js:567
+      3    0.0%    0.2%  LazyCompile: *match native string.js:182
+      3    0.0%    0.2%  LazyCompile: *Object.extend.skipSymbol /Users/james/projects/nunjucks/src/parser.js:97
+      3    0.0%    0.2%  LazyCompile: *Object.extend.skip /Users/james/projects/nunjucks/src/parser.js:65
+      3    0.0%    0.2%  LazyCompile: *Object.extend.peekToken /Users/james/projects/nunjucks/src/parser.js:41
+      3    0.0%    0.2%  LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/runtime.js:9
+      3    0.0%    0.2%  KeyedLoadIC: args_count: 0
+      3    0.0%    0.2%  Function: ~Object.extend.init /Users/james/projects/nunjucks/src/nodes.js:7
+      2    0.0%    0.1%  Stub: RecordWriteStub {1}
+      2    0.0%    0.1%  Stub: RecordWriteStub
+      2    0.0%    0.1%  Stub: KeyedStoreElementStub
+      2    0.0%    0.1%  Stub: CompareICStub {2}
+      2    0.0%    0.1%  LazyCompile: ~<anonymous>
+      2    0.0%    0.1%  LazyCompile: ToString native runtime.js:550
+      2    0.0%    0.1%  LazyCompile: IN native runtime.js:354
+      2    0.0%    0.1%  LazyCompile: APPLY_PREPARE native runtime.js:438
+      2    0.0%    0.1%  LazyCompile: *module.exports.parse /Users/james/projects/nunjucks/src/parser.js:1063
+      2    0.0%    0.1%  LazyCompile: *Object.extend.set /Users/james/projects/nunjucks/src/runtime.js:14
+      2    0.0%    0.1%  LazyCompile: *Object.extend.parseInlineIf /Users/james/projects/nunjucks/src/parser.js:560
+      2    0.0%    0.1%  LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/parser.js:7
+      2    0.0%    0.1%  KeyedStoreIC: args_count: 0 {1}
+      2    0.0%    0.1%  Function: ~Object.extend._getBlocks /Users/james/projects/nunjucks/src/environment.js:338
+      2    0.0%    0.1%  Builtin: ArrayConcat
+      1    0.0%    0.1%  Stub: ToBooleanStub_Bool
+      1    0.0%    0.1%  Stub: StringAddStub {1}
+      1    0.0%    0.1%  Stub: RecordWriteStub {7}
+      1    0.0%    0.1%  Stub: RecordWriteStub {6}
+      1    0.0%    0.1%  Stub: RecordWriteStub {5}
+      1    0.0%    0.1%  Stub: RecordWriteStub {4}
+      1    0.0%    0.1%  Stub: RecordWriteStub {3}
+      1    0.0%    0.1%  Stub: RecordWriteStub {2}
+      1    0.0%    0.1%  Stub: JSEntryStub
+      1    0.0%    0.1%  Stub: FastNewContextStub
+      1    0.0%    0.1%  Stub: FastCloneShallowObjectStub
+      1    0.0%    0.1%  Stub: FastCloneShallowArrayStub
+      1    0.0%    0.1%  Stub: CallConstructStub_Recording
+      1    0.0%    0.1%  Stub: BinaryOpStub_SUB_Alloc_SMI
+      1    0.0%    0.1%  Stub: BinaryOpStub_ADD_Alloc_BothStrings
+      1    0.0%    0.1%  LazyCompile: ~filter native array.js:1011
+      1    0.0%    0.1%  LazyCompile: ~INSTANCE_OF native runtime.js:367
+      1    0.0%    0.1%  LazyCompile: ~EQUALS native runtime.js:54
+      1    0.0%    0.1%  LazyCompile: EQUALS native runtime.js:54
+      1    0.0%    0.1%  LazyCompile: <anonymous> native v8natives.js:1271
+      1    0.0%    0.1%  LazyCompile: *split native string.js:554
+      1    0.0%    0.1%  LazyCompile: *module.exports.lex /Users/james/projects/nunjucks/src/lexer.js:377
+      1    0.0%    0.1%  LazyCompile: *Tokenizer.is_finished /Users/james/projects/nunjucks/src/lexer.js:318
+      1    0.0%    0.1%  LazyCompile: *Tokenizer.current /Users/james/projects/nunjucks/src/lexer.js:365
+      1    0.0%    0.1%  LazyCompile: *ToUint32 native runtime.js:586
+      1    0.0%    0.1%  LazyCompile: *Object.extend.parse /Users/james/projects/nunjucks/src/parser.js:1041
+      1    0.0%    0.1%  LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/compiler.js:35
+      1    0.0%    0.1%  KeyedLoadIC: args_count: 0 {2}
+      1    0.0%    0.1%  Function: ~Tokenizer.forward /Users/james/projects/nunjucks/src/lexer.js:328
+      1    0.0%    0.1%  Function: ~Object.extend.compileOutput /Users/james/projects/nunjucks/src/compiler.js:827
+      1    0.0%    0.1%  Function: ~Object.extend.compileLookupVal /Users/james/projects/nunjucks/src/compiler.js:360
+      1    0.0%    0.1%  Builtin: FunctionApply
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [GC]:
+   ticks  total  nonlib   name
+    111    1.1%
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+   3434   34.2%  /usr/local/bin/node
+    547   15.9%    LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    442   80.8%      LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    321   72.6%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    321  100.0%          LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+    321  100.0%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    120   27.1%        LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    120  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    120  100.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     91   16.6%      LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     91  100.0%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     91  100.0%          LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     91  100.0%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     13    2.4%      LazyCompile: *Object.extend.compile /Users/james/projects/nunjucks/src/compiler.js:877
+     13  100.0%        Function: ~Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+      8   61.5%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+      6   75.0%            LazyCompile: *Object.extend.compile /Users/james/projects/nunjucks/src/compiler.js:877
+      2   25.0%            LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+      3   23.1%          LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+      3  100.0%            Function: ~Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+      2   15.4%          LazyCompile: *Object.extend.compile /Users/james/projects/nunjucks/src/compiler.js:877
+      2  100.0%            Function: ~Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+    515   15.0%    LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    418   81.2%      LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    368   88.0%        LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    296   80.4%          LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    264   89.2%            LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+     32   10.8%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     70   19.0%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     70  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     48   11.5%        LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     48  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     48  100.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     94   18.3%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     94  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     94  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     94  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    321    9.3%    LazyCompile: *Object.extend.compileOutput /Users/james/projects/nunjucks/src/compiler.js:814
+    247   76.9%      LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    204   82.6%        LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    157   77.0%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    157  100.0%            LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     45   22.1%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     45  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     37   15.0%        LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     37  100.0%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     37  100.0%            LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+      6    2.4%        LazyCompile: *Object.extend.compile /Users/james/projects/nunjucks/src/compiler.js:877
+      6  100.0%          Function: ~Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+      3   50.0%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+      3   50.0%            LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+     71   22.1%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     71  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     71  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     71  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    313    9.1%    Function: Object.extend.init /Users/james/projects/nunjucks/src/nodes.js:7
+    159   50.8%      LazyCompile: *new_cls /Users/james/projects/nunjucks/src/object.js:37
+     60   37.7%        LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+     45   75.0%          LazyCompile: *Object.extend.parse /Users/james/projects/nunjucks/src/parser.js:1041
+     45  100.0%            Function: Object.extend.parseUntilBlocks /Users/james/projects/nunjucks/src/parser.js:976
+     15   25.0%          LazyCompile: *module.exports.parse /Users/james/projects/nunjucks/src/parser.js:1063
+     15  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     54   34.0%        LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+     50   92.6%          LazyCompile: *Object.extend.parseUnary /Users/james/projects/nunjucks/src/parser.js:745
+     50  100.0%            LazyCompile: *Object.extend.parseDiv /Users/james/projects/nunjucks/src/parser.js:697
+      4    7.4%          LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+      4  100.0%            LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+     27   17.0%        LazyCompile: *Object.extend.parsePostfix /Users/james/projects/nunjucks/src/parser.js:500
+     27  100.0%          LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+     27  100.0%            LazyCompile: *Object.extend.parseUnary /Users/james/projects/nunjucks/src/parser.js:745
+     18   11.3%        LazyCompile: *Object.extend.parseIf /Users/james/projects/nunjucks/src/parser.js:341
+     18  100.0%          LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+     18  100.0%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+    112   35.8%      LazyCompile: *Node.extend.init /Users/james/projects/nunjucks/src/nodes.js:78
+    112  100.0%        LazyCompile: *<anonymous> /Users/james/projects/nunjucks/src/object.js:17
+    101   90.2%          LazyCompile: *new_cls /Users/james/projects/nunjucks/src/object.js:37
+     71   70.3%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+     30   29.7%            LazyCompile: *Object.extend.parse /Users/james/projects/nunjucks/src/parser.js:1041
+     11    9.8%          Function: ~new_cls /Users/james/projects/nunjucks/src/object.js:37
+     11  100.0%            LazyCompile: *module.exports.parse /Users/james/projects/nunjucks/src/parser.js:1063
+     32   10.2%      LazyCompile: *Object.extend.parsePostfix /Users/james/projects/nunjucks/src/parser.js:500
+     32  100.0%        LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+     32  100.0%          LazyCompile: *Object.extend.parseUnary /Users/james/projects/nunjucks/src/parser.js:745
+     32  100.0%            LazyCompile: *Object.extend.parseDiv /Users/james/projects/nunjucks/src/parser.js:697
+     10    3.2%      Function: ~new_cls /Users/james/projects/nunjucks/src/object.js:37
+     10  100.0%        LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+     10  100.0%          LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+     10  100.0%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+    187    5.4%    LazyCompile: *<anonymous> /Users/james/projects/nunjucks/src/object.js:17
+    177   94.7%      LazyCompile: *new_cls /Users/james/projects/nunjucks/src/object.js:37
+    136   76.8%        LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+     98   72.1%          LazyCompile: *Object.extend.parse /Users/james/projects/nunjucks/src/parser.js:1041
+     98  100.0%            Function: Object.extend.parseUntilBlocks /Users/james/projects/nunjucks/src/parser.js:976
+     38   27.9%          LazyCompile: *module.exports.parse /Users/james/projects/nunjucks/src/parser.js:1063
+     38  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     41   23.2%        LazyCompile: *Object.extend.parse /Users/james/projects/nunjucks/src/parser.js:1041
+     41  100.0%          Function: Object.extend.parseUntilBlocks /Users/james/projects/nunjucks/src/parser.js:976
+     31   75.6%            LazyCompile: *Object.extend.parseIf /Users/james/projects/nunjucks/src/parser.js:341
+     10   24.4%            LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+     10    5.3%      Function: ~new_cls /Users/james/projects/nunjucks/src/object.js:37
+     10  100.0%        LazyCompile: *module.exports.parse /Users/james/projects/nunjucks/src/parser.js:1063
+     10  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+      9   90.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+      1   10.0%            Function: ~Object.extend._compile /Users/james/projects/nunjucks/src/environment.js:321
+    177    5.2%    LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    176   99.4%      LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    176  100.0%        Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    176  100.0%          Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    175   99.4%            LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/environment.js:253
+    155    4.5%    LazyCompile: *replace native string.js:221
+    155  100.0%      LazyCompile: *Object.extend.compileLiteral /Users/james/projects/nunjucks/src/compiler.js:240
+    137   88.4%        LazyCompile: *Object.extend.compileOutput /Users/james/projects/nunjucks/src/compiler.js:814
+    112   81.8%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     91   81.3%            LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     21   18.8%            LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     25   18.2%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     25  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     18   11.6%        LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+     18  100.0%          LazyCompile: *Object.extend.compileLookupVal /Users/james/projects/nunjucks/src/compiler.js:360
+     16   88.9%            LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+      2   11.1%            LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+    142    4.1%    LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     75   52.8%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     75  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     75  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     75  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+     67   47.2%      LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     67  100.0%        LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     67  100.0%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     67  100.0%            LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    129    3.8%    LazyCompile: *exports.toArray /Users/james/projects/nunjucks/src/lib.js:117
+    111   86.0%      Function: Object.extend.assertType /Users/james/projects/nunjucks/src/compiler.js:161
+    110   99.1%        LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+     73   66.4%          LazyCompile: *Object.extend.compileLookupVal /Users/james/projects/nunjucks/src/compiler.js:360
+     48   65.8%            LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+     25   34.2%            LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+     31   28.2%          LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     18   58.1%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     13   41.9%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+      6    5.5%          LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+      6  100.0%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     18   14.0%      Function: Object.extend.parseUntilBlocks /Users/james/projects/nunjucks/src/parser.js:976
+     11   61.1%        LazyCompile: *Object.extend.parseIf /Users/james/projects/nunjucks/src/parser.js:341
+     11  100.0%          LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+     11  100.0%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+      5   27.8%        LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+      5  100.0%          LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+      5  100.0%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+      2   11.1%        Function: ~Object.extend.parseIf /Users/james/projects/nunjucks/src/parser.js:341
+      2  100.0%          LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+      2  100.0%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+    125    3.6%    LazyCompile: *indexOf native string.js:118
+    116   92.8%      LazyCompile: *Tokenizer._extractMatching /Users/james/projects/nunjucks/src/lexer.js:283
+     93   80.2%        LazyCompile: *Tokenizer._extractUntil /Users/james/projects/nunjucks/src/lexer.js:271
+     93  100.0%          LazyCompile: *Tokenizer.nextToken /Users/james/projects/nunjucks/src/lexer.js:56
+     33   35.5%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+     27   29.0%            LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+     16   17.2%            LazyCompile: *Object.extend.parseAnd /Users/james/projects/nunjucks/src/parser.js:590
+     15   16.1%            LazyCompile: *Object.extend.parsePostfix /Users/james/projects/nunjucks/src/parser.js:500
+      2    2.2%            LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+     23   19.8%        LazyCompile: *Tokenizer.nextToken /Users/james/projects/nunjucks/src/lexer.js:56
+      5   21.7%          LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+      5  100.0%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+      5   21.7%          LazyCompile: *Object.extend.parsePostfix /Users/james/projects/nunjucks/src/parser.js:500
+      5  100.0%            LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+      4   17.4%          LazyCompile: *Object.extend.peekToken /Users/james/projects/nunjucks/src/parser.js:41
+      4  100.0%            LazyCompile: *Object.extend.parsePostfix /Users/james/projects/nunjucks/src/parser.js:500
+      4   17.4%          LazyCompile: *Object.extend.parseAnd /Users/james/projects/nunjucks/src/parser.js:590
+      4  100.0%            LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+      4   17.4%          LazyCompile: *Object.extend.advanceAfterBlockEnd /Users/james/projects/nunjucks/src/parser.js:101
+      2   50.0%            LazyCompile: *Object.extend.parseIf /Users/james/projects/nunjucks/src/parser.js:341
+      2   50.0%            LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+      1    4.3%          LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+      1  100.0%            LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+      8    6.4%      LazyCompile: *Tokenizer.nextToken /Users/james/projects/nunjucks/src/lexer.js:56
+      5   62.5%        LazyCompile: *Object.extend.parsePostfix /Users/james/projects/nunjucks/src/parser.js:500
+      5  100.0%          LazyCompile: *Object.extend.parsePrimary /Users/james/projects/nunjucks/src/parser.js:770
+      4   80.0%            LazyCompile: *Object.extend.parseUnary /Users/james/projects/nunjucks/src/parser.js:745
+      1   20.0%            LazyCompile: *Object.extend.parseFor /Users/james/projects/nunjucks/src/parser.js:135
+      3   37.5%        LazyCompile: *Object.extend.parseStatement /Users/james/projects/nunjucks/src/parser.js:407
+      3  100.0%          LazyCompile: *Object.extend.parseNodes /Users/james/projects/nunjucks/src/parser.js:986
+      3  100.0%            LazyCompile: *Object.extend.parse /Users/james/projects/nunjucks/src/parser.js:1041
+     92    2.7%    LazyCompile: SimpleSlice native array.js:324
+     92  100.0%      LazyCompile: *ArraySlice native array.js:621
+     92  100.0%        LazyCompile: *exports.toArray /Users/james/projects/nunjucks/src/lib.js:117
+     92  100.0%          Function: Object.extend.assertType /Users/james/projects/nunjucks/src/compiler.js:161
+     92  100.0%            LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+     73    2.1%    LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+     52   71.2%      LazyCompile: *Object.extend.compileLookupVal /Users/james/projects/nunjucks/src/compiler.js:360
+     31   59.6%        LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+     31  100.0%          Function: ~Object.extend.compileOutput /Users/james/projects/nunjucks/src/compiler.js:827
+     31  100.0%            LazyCompile: *Object.extend._bufferAppend /Users/james/projects/nunjucks/src/compiler.js:102
+     21   40.4%        LazyCompile: *Object.extend._compileExpression /Users/james/projects/nunjucks/src/compiler.js:129
+     21  100.0%          LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     11   52.4%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     10   47.6%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     17   23.3%      LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     11   64.7%        LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     11  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     11  100.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+      6   35.3%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+      6  100.0%          LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+      6  100.0%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+      3    4.1%      LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+      3  100.0%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+      3  100.0%          LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+      3  100.0%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+
+   2525   25.1%  /usr/lib/system/libsystem_c.dylib
+    766   30.3%    LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    627   81.9%      LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    432   68.9%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    432  100.0%          LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+    432  100.0%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    189   30.1%        LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    189  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    189  100.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    129   16.8%      LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+    129  100.0%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    128   99.2%          LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    126   98.4%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    702   27.8%    LazyCompile: *Object.extend.compileOutput /Users/james/projects/nunjucks/src/compiler.js:814
+    536   76.4%      LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    443   82.6%        LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    340   76.7%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    340  100.0%            LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+    102   23.0%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    102  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     81   15.1%        LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     81  100.0%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     80   98.8%            LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     12    2.2%        LazyCompile: *Object.extend.compile /Users/james/projects/nunjucks/src/compiler.js:877
+     11   91.7%          Function: ~Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     10   90.9%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+      1    9.1%            LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+      1    8.3%          Function: ~Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+      1  100.0%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    160   22.8%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    160  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    160  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    160  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    455   18.0%    LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    363   79.8%      LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    317   87.3%        LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    264   83.3%          LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    244   92.4%            LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+     18    6.8%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     52   16.4%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     52  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     44   12.1%        LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     44  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     44  100.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     88   19.3%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     88  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     88  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     88  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    221    8.8%    LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    221  100.0%      LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    221  100.0%        Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    221  100.0%          Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    219   99.1%            LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/environment.js:253
+    156    6.2%    LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     85   54.5%      LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     85  100.0%        LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     85  100.0%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     85  100.0%            LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     69   44.2%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     69  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     69  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     69  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+     55    2.2%    LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     55  100.0%      LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     53   96.4%        LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     53  100.0%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     53  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+      2    3.6%        LazyCompile: *Object.extend.compile /Users/james/projects/nunjucks/src/compiler.js:877
+      2  100.0%          Function: ~Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+      2  100.0%            LazyCompile: *Object.extend._compileChildren /Users/james/projects/nunjucks/src/compiler.js:108
+     53    2.1%    LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     53  100.0%      Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     53  100.0%        Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+     52   98.1%          LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/environment.js:253
+     52  100.0%            LazyCompile: *new_cls /Users/james/projects/nunjucks/src/object.js:37
+
+   2454   24.4%  /usr/lib/system/libsystem_kernel.dylib
+    741   30.2%    LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    617   83.3%      LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    445   72.1%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    445  100.0%          LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+    445  100.0%            LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    170   27.6%        LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    170  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    170  100.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    112   15.1%      LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+    112  100.0%        LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    110   98.2%          LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    109   99.1%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    710   28.9%    LazyCompile: *Object.extend.compileOutput /Users/james/projects/nunjucks/src/compiler.js:814
+    549   77.3%      LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    464   84.5%        LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    319   68.8%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+    319  100.0%            LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+    145   31.3%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    145  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     80   14.6%        LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     80  100.0%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     77   96.3%            LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+      3    3.8%            LazyCompile: *Object.extend.compile /Users/james/projects/nunjucks/src/compiler.js:877
+    154   21.7%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    154  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    154  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    154  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    451   18.4%    LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    356   78.9%      LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    314   88.2%        LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    249   79.3%          LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+    225   90.4%            LazyCompile: *Object.extend.findAll /Users/james/projects/nunjucks/src/nodes.js:28
+     24    9.6%            LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     63   20.1%          LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     63  100.0%            LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     39   11.0%        LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     39  100.0%          LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     39  100.0%            Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     91   20.2%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+     91  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     91  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     91  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    205    8.4%    LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    205  100.0%      LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    205  100.0%        Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    205  100.0%          Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+    205  100.0%            LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/environment.js:253
+    201    8.2%    LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+    114   56.7%      LazyCompile: *Object.extend.compileRoot /Users/james/projects/nunjucks/src/compiler.js:832
+    114  100.0%        LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+    114  100.0%          Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+    114  100.0%            Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+     84   41.8%      LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     84  100.0%        LazyCompile: *Object.extend.compileFor /Users/james/projects/nunjucks/src/compiler.js:481
+     84  100.0%          LazyCompile: *Object.extend.compileNodeList /Users/james/projects/nunjucks/src/compiler.js:236
+     84  100.0%            LazyCompile: *Object.extend.compileIf /Users/james/projects/nunjucks/src/compiler.js:467
+     68    2.8%    LazyCompile: *module.exports.compile /Users/james/projects/nunjucks/src/compiler.js:908
+     67   98.5%      Function: ~Object.extend.init.compiled /Users/james/projects/nunjucks/src/environment.js:277
+     67  100.0%        Function: exports.withPrettyErrors /Users/james/projects/nunjucks/src/lib.js:18
+     65   97.0%          LazyCompile: *Object.extend.init /Users/james/projects/nunjucks/src/environment.js:253
+     65  100.0%            LazyCompile: *new_cls /Users/james/projects/nunjucks/src/object.js:37
+      2    3.0%          Function: ~Object.extend.init /Users/james/projects/nunjucks/src/environment.js:253
+      2  100.0%            LazyCompile: *new_cls /Users/james/projects/nunjucks/src/object.js:37
+
