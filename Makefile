@@ -5,5 +5,5 @@ test:
 browserfiles:
 	./bin/bundle browser/nunjucks.js
 	SLIM=1 ./bin/bundle browser/nunjucks-slim.js
-	cd browser && ../node_modules/.bin/uglifyjs nunjucks.js > nunjucks.min.js
-	cd browser && ../node_modules/.bin/uglifyjs nunjucks-slim.js > nunjucks-slim.min.js
+	cd browser && ../node_modules/uglify-js/bin/uglifyjs nunjucks.js > nunjucks.min.js
+	cd browser && ../node_modules/uglify-js/bin/uglifyjs nunjucks-slim.js > nunjucks-slim.min.js
