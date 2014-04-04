@@ -1,7 +1,7 @@
 {
-    "name": "nunjucks",
-    "description": "A powerful templating engine with inheritance, asynchronous control, and more (jinja2 inspired)",
-    "version": "1.0.2",
+    "name": "nunjucks-pinterest",
+    "description": "A fork of Nunjucks with changes from the 1.1 branch needed by Pinterest",
+    "version": "0.0.1",
     "author": "James Long <longster@gmail.com>",
     "dependencies": {
         "optimist": "*",
@@ -25,13 +25,13 @@
     "main": "index",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jlongster/nunjucks.git"
+        "url": "https://github.com/chrisdanford/nunjucks.git"
     },
     "license": [{
         "type": "BSD",
-        "url": "https://github.com/jlongster/nunjucks/blob/master/LICENSE"
+        "url": "https://github.com/chrisdanford/nunjucks/blob/master/LICENSE"
     }],
     "bugs": {
-        "url": "https://github.com/jlongster/nunjucks/issues"
+        "url": "https://github.com/chrisdanford/nunjucks/issues"
     }
 }

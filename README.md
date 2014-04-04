@@ -1,5 +1,6 @@
+# Nunjucks-pinterest
 
-# Nunjucks
+This is a fork of Nunjucks with changes from the 1.1 branch of Nunjucks that are needed by Pinterest and published to npm as nunjucks-pinterest.
 
 [Nunjucks](http://jlongster.github.io/nunjucks/) is a full featured
 templating engine for javascript. It is heavily inspired by
