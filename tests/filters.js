@@ -356,23 +356,23 @@
 
             // punctuation on the beginning of line.
             equal('{{ "(http://jinja.pocoo.org/docs/templates/" | urlize }}',
-                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
+                '(<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
             equal('{{ "<http://jinja.pocoo.org/docs/templates/" | urlize }}',
-                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
+                '<<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
             equal('{{ "&lt;http://jinja.pocoo.org/docs/templates/" | urlize }}',
-                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
+                '&lt;<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
 
             // punctuation on the end of line
             equal('{{ "http://jinja.pocoo.org/docs/templates/," | urlize }}',
-                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
+                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>,');
             equal('{{ "http://jinja.pocoo.org/docs/templates/." | urlize }}',
-                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
+                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>.');
             equal('{{ "http://jinja.pocoo.org/docs/templates/)" | urlize }}',
-                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
+                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>)');
             equal('{{ "http://jinja.pocoo.org/docs/templates/\n" | urlize }}',
                 '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
             equal('{{ "http://jinja.pocoo.org/docs/templates/&gt;" | urlize }}',
-                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>');
+                '<a href="http://jinja.pocoo.org/docs/templates/">http://jinja.pocoo.org/docs/templates/</a>&gt;');
 
             // http url with username
             equal('{{ "http://testuser@testuser.com" | urlize }}',

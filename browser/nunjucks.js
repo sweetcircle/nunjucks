@@ -1,4 +1,4 @@
-// Browser bundle of nunjucks 1.0.2 
+// Browser bundle of nunjucks 0.0.1 
 
 (function() {
 var modules = {};
@@ -4230,7 +4230,7 @@ var filters = {
 
         // For the jinja regexp, see
         // https://github.com/mitsuhiko/jinja2/blob/f15b814dcba6aa12bc74d1f7d0c881d55f7126be/jinja2/utils.py#L20-L23
-        var puncRE = /^(?:\(|<|&lt;)?(.*?)(?:\.|,|\)|\n|&gt;)?$/;
+        var puncRE = /^(?:\(|<|&lt;)?(.*?)(?:\.|,|\)|\n|>|&gt;)?$/;
         // from http://blog.gerv.net/2011/05/html5_email_address_regexp/
         var emailRE = /^[\w.!#$%&'*+\-\/=?\^`{|}~]+@[a-z\d\-]+(\.[a-z\d\-]+)+$/i;
         var httpHttpsRE = /^https?:\/\/.*$/;
@@ -4245,24 +4245,33 @@ var filters = {
           var matches = word.match(puncRE);
 
           var possibleUrl = matches && matches[1] || word;
+          var head = '', tail = '';
+          if (possibleUrl !== word) {
+            var matchIndex = word.indexOf(possibleUrl);
+            head = word.substring(0, matchIndex);
+            tail = word.substring(matchIndex + possibleUrl.length);
+          }
 
           // url that starts with http or https
           if (httpHttpsRE.test(possibleUrl))
-            return '<a href="' + possibleUrl + '"' + noFollowAttr + '>' + possibleUrl.substr(0, length) + '</a>';
+            possibleUrl =
+              '<a href="' + possibleUrl + '"' + noFollowAttr + '>' + possibleUrl.substr(0, length) + '</a>';
 
           // url that starts with www.
-          if (wwwRE.test(possibleUrl))
-            return '<a href="http://' + possibleUrl + '"' + noFollowAttr + '>' + possibleUrl.substr(0, length) + '</a>';
+          else if (wwwRE.test(possibleUrl))
+            possibleUrl =
+              '<a href="http://' + possibleUrl + '"' + noFollowAttr + '>' + possibleUrl.substr(0, length) + '</a>';
 
           // an email address of the form username@domain.tld
-          if (emailRE.test(possibleUrl))
-            return '<a href="mailto:' + possibleUrl + '">' + possibleUrl + '</a>';
+          else if (emailRE.test(possibleUrl))
+            possibleUrl = '<a href="mailto:' + possibleUrl + '">' + possibleUrl + '</a>';
 
           // url that ends in .com, .org or .net that is not an email address
-          if (tldRE.test(possibleUrl))
-            return '<a href="http://' + possibleUrl + '"' + noFollowAttr + '>' + possibleUrl.substr(0, length) + '</a>';
+          else if (tldRE.test(possibleUrl))
+            possibleUrl =
+              '<a href="http://' + possibleUrl + '"' + noFollowAttr + '>' + possibleUrl.substr(0, length) + '</a>';
 
-          return possibleUrl;
+          return head + possibleUrl + tail;
 
         });
 
